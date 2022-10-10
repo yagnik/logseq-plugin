@@ -1,0 +1,11 @@
+{
+  "name": "logseq-plugin",
+  "version": "0.0.1",
+  "description": "Personal plugins for logseq",
+  "main": "index.html",
+  "author": "Yagnik",
+  "license": "MIT",
+  "logseq": {
+    "id": "logseq-personal-plugins"
+  }
+}
