@@ -1,0 +1,11 @@
+{
+  "name": "logseq-plugin",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "settings": {},
+  "extensions": [],
+  "forwardPorts": [],
+  "postCreateCommand": "npm install -g pnpm && pnpm install",
+  "remoteUser": "node"
+}

@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  app:
+    image: mcr.microsoft.com/vscode/devcontainers/typescript-node:0-16-buster
+    init: true
+    volumes:
+      - ..:/workspace:cached
+    command: sleep infinity
