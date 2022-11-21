@@ -2,7 +2,7 @@ import { fromJournalToIso } from "../../lib/date";
 import { avoidRender } from "../../lib/inifinityAvoidance";
 import { FLAG, RECOMPUTE_DURATION } from "./config";
 
-async function clearChildren(children: {"uuid": string}[]) {
+async function clearChildren(children: { uuid: string }[]) {
   for (let child of children) {
     await logseq.Editor.removeBlock(child.uuid);
   }
@@ -33,7 +33,7 @@ async function main(currentBlock: string, page: string) {
   let block = await logseq.Editor.getBlock(currentBlock, {
     includeChildren: true,
   });
-  block && clearChildren(block.children as {"uuid": string}[]);
+  block && clearChildren(block.children as { uuid: string }[]);
   await logseq.Editor.insertBatchBlock(
     currentBlock,
     await getContentLinks(page),

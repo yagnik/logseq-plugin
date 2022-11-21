@@ -3,6 +3,7 @@
 Personal plugins to manage logseq
 
 ## Plugins
+
 - Autolog
   - Pull blocks from journal and put them in one place
   - Use it to track updates on thoughts
