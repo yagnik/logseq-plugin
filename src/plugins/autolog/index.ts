@@ -10,6 +10,7 @@ async function clearChildren(children: { uuid: string }[]) {
 
 async function getContentLinks(page: string) {
   let links = (await logseq.Editor.getPageLinkedReferences(page)) || [];
+
   return links
     .filter(([page, blocks]) => {
       return page && !!page["journalDay"] && blocks.length > 0;

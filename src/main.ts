@@ -1,9 +1,9 @@
 import "@logseq/libs";
-// import { register as AutoLogRegister } from "./plugins/autolog";
+import { register as AutoLogRegister } from "./plugins/autolog";
 import { register as ValidatorRegister } from "./plugins/validator";
 
 const main = async () => {
-  // await AutoLogRegister();
+  await AutoLogRegister();
   await ValidatorRegister();
 };
 
